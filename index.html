@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Substance Abuse Prevention</title>
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --dark: #121212;
+      --light: #f4f4f4;
+      --accent: #0dcaf0;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--dark);
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #0d6efd, #0dcaf0);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #0d6efd;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      text-align: center;
+      color: var(--accent);
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #1f1f1f;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      margin: 40px 0;
+    }
+
+    .stat {
+      text-align: center;
+    }
+
+    .stat h2 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    .testimonial {
+      background: #292929;
+      border-left: 5px solid var(--accent);
+      padding: 20px;
+      margin-top: 20px;
+      font-style: italic;
+    }
+
+    .contact-form {
+      background: #1f1f1f;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #0b5ed7;
+    }
+
+    footer {
+      background: #0d6efd;
+      text-align: center;
+      padding: 20px;
+      color: white;
+      margin-top: 40px;
+    }
+
+    @media(max-width: 600px) {
+      .stats {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Substance Abuse Prevention</h1>
+    <p>Empowering communities. Protecting futures. Ending addiction.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#risks">Risks</a>
+    <a href="#stats">Stats</a>
+    <a href="#testimonials">Stories</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2 class="section-title">Why Prevention Matters</h2>
+    <div class="info-grid">
+      <div class="card">
+        <h3>Early Intervention</h3>
+        <p>Starting education early reduces the chances of substance misuse in adolescence and adulthood.</p>
+      </div>
+      <div class="card">
+        <h3>Community Support</h3>
+        <p>Strong community programs provide resources and safe environments for youth and families.</p>
+      </div>
+      <div class="card">
+        <h3>Policy & Education</h3>
+        <p>Advocating for health policies and educational curricula helps drive long-term change.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="risks">
+    <h2 class="section-title">Common Risk Factors</h2>
+    <div class="info-grid">
+      <div class="card">
+        <h3>Peer Pressure</h3>
+        <p>Social influence is a leading cause of initial substance use among teens and young adults.</p>
+      </div>
+      <div class="card">
+        <h3>Mental Health</h3>
+        <p>Untreated depression, anxiety, and trauma often correlate with higher substance use rates.</p>
+      </div>
+      <div class="card">
+        <h3>Family History</h3>
+        <p>Genetics and household environment play a role in the likelihood of substance dependency.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <h2 class="section-title">Impact in Numbers</h2>
+    <div class="stats">
+      <div class="stat">
+        <h2 id="stat1">0</h2>
+        <p>Million Teens Affected</p>
+      </div>
+      <div class="stat">
+        <h2 id="stat2">0%</h2>
+        <p>Risk Reduction with Education</p>
+      </div>
+      <div class="stat">
+        <h2 id="stat3">0</h2>
+        <p>Lives Saved Yearly</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2 class="section-title">Real Stories</h2>
+    <div class="testimonial">
+      “Prevention programs helped me understand my worth and gave me real tools. Today, I’m 5 years sober and mentoring others.”
+      <br><br>— Jordan, 29
+    </div>
+    <div class="testimonial">
+      “Early education made all the difference for my kids. They feel empowered to say no and know where to turn for help.”
+      <br><br>— Maria, Parent
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Get Involved</h2>
+    <form class="contact-form" onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Substance Abuse Prevention Initiative. All Rights Reserved.
+  </footer>
+
+  <script>
+    // Animated Stats
+    function animateValue(id, start, end, duration) {
+      let obj = document.getElementById(id);
+      let range = end - start;
+      let current = start;
+      let increment = end > start ? 1 : -1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      let timer = setInterval(() => {
+        current += increment;
+        obj.textContent = (id === "stat2") ? current + "%" : current;
+        if (current == end) clearInterval(timer);
+      }, stepTime);
+    }
+
+    window.addEventListener("load", () => {
+      animateValue("stat1", 0, 10, 2000);
+      animateValue("stat2", 0, 70, 2000);
+      animateValue("stat3", 0, 50000, 2000);
+    });
+
+    // Form Submission
+    function submitForm(e) {
+      e.preventDefault();
+      alert("Thank you for your message! We will get back to you soon.");
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
